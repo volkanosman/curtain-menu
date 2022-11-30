@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f16c5d3d81.js" crossorigin="anonymous"></script> 
+  </head>
+
+  <body data-nav="false"> 
+
+    <main></main>
+    <nav id="nav">
+      <div id="nav-links">
+        <a class="nav-link" href="https://www.freecodecamp.org/news/how-to-center-a-div-with-css-10-different-ways/">
+          <h2 class="nav-link-label rubik-font">Home</h2>
+          <img class="nav-link-image" src="https://images.unsplash.com/photo-1666091863721-54331a5db52d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" />
+        </a>
+        <a class="nav-link" href="#">
+          <h2 class="nav-link-label rubik-font">Work</h2>
+          <img class="nav-link-image" src="https://images.unsplash.com/photo-1666055642230-1595470b98fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=995&q=80" />
+        </a>
+        <a class="nav-link" href="#">
+          <h2 class="nav-link-label rubik-font">About</h2>
+          <img class="nav-link-image" src="https://images.unsplash.com/photo-1666005487638-61f45819c975?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" />
+        </a>
+        <a class="nav-link" href="#">
+          <h2 class="nav-link-label rubik-font">Contact</h2>
+          <img class="nav-link-image" src="https://images.unsplash.com/photo-1665910407771-bc84ad45676b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80" />
+        </a>
+        <a class="nav-link" href="#">
+          <h2 class="nav-link-label rubik-font">Join Us</h2>
+          <img class="nav-link-image" src="https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" />
+        </a>
+      </div>
+    </nav>
+      
+    <button id="nav-toggle" type="button" onclick="toggleNav()">
+      <i class=" open fa-solid fa-bars-staggered"></i>
+      <i class=" close fa-solid fa-house"></i>
+    </button>     
+   
+      
+    
+    
+    <script>
+      const toggleNav = () => {/*check the current status of nav and change it to opposite(true/false) */
+      document.body.dataset.nav = document.body.dataset.nav === "true" ? "false" : "true";
+      }
+    </script>
+  </body>
+</html>
